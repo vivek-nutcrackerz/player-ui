@@ -1,6 +1,6 @@
 import { FunctionalComponent, h } from "preact";
 import style from "./style.css";
-import Videoplayer from "../../components/videoplayer";
+import Player from "../../components/player";
 
 const videoJsOptions = {
   autoplay: true,
@@ -16,8 +16,7 @@ const videoJsOptions = {
 const Home: FunctionalComponent = () => {
   return (
     <div class={style.home}>
-      <h1>Home</h1>
-      <Videoplayer {...videoJsOptions} />
+      <Player {...videoJsOptions} />
     </div>
   );
 };

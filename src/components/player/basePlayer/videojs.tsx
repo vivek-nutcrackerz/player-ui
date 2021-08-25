@@ -8,7 +8,7 @@ interface VideoPlayerPropsInferface {
   videoJsOptions: videojs.PlayerOptions;
 }
 
-export default class Videoplayer extends Component {
+export default class VideojsPlayer extends Component {
   private player?: videojs.Player;
   private videoNode?: HTMLVideoElement;
 
@@ -38,15 +38,12 @@ export default class Videoplayer extends Component {
   render() {
     return (
       <div className="c-player">
+        <h1>Video.js</h1>
         <div className="c-player__screen" data-vjs-player="true">
           <video
             ref={(node: HTMLVideoElement) => (this.videoNode = node)}
             className="video-js"
           />
-        </div>
-        <div className="c-player__controls">
-          <button>Play</button>
-          <button>Pause</button>
         </div>
       </div>
     );
