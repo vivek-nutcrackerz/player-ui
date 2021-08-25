@@ -21,9 +21,11 @@
     ]
   },
   "dependencies": {
+    "@types/video.js": "^7.3.26",
     "preact": "^10.3.1",
     "preact-render-to-string": "^5.1.4",
-    "preact-router": "^3.2.1"
+    "preact-router": "^3.2.1",
+    "video.js": "^7.14.3"
   },
   "devDependencies": {
     "@types/enzyme": "^3.10.5",
