@@ -1,0 +1,12 @@
+{
+  "sourceMaps": true,
+  "presets": [
+    ["latest", { "modules": false }],
+    "preact"
+  ],
+  "plugins": [
+    "syntax-flow",
+    "transform-flow-strip-types",
+    "transform-object-rest-spread"
+  ]
+}
